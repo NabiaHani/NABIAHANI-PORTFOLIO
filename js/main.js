@@ -1,17 +1,3 @@
-// (function ($) {
-//     "use strict";
-
-//     // loader
-//     var loader = function () {
-//         setTimeout(function () {
-//             if ($('#loader').length > 0) {
-//                 $('#loader').removeClass('show');
-//             }
-//         }, 1);
-//     };
-//     loader();
-
-
 // Initiate the wowjs
 new WOW().init();
 
@@ -40,22 +26,6 @@ $(window).scroll(function () {
 });
 
 
-// Smooth scrolling on the navbar links
-// $(".navbar-nav a").on('click', function (event) {
-//     if (this.hash !== "") {
-//         event.preventDefault();
-
-//         $('html, body').animate({
-//             scrollTop: $(this.hash).offset().top - 45
-//         }, 1500, 'easeInOutExpo');
-
-//         if ($(this).parents('.navbar-nav').length) {
-//             $('.navbar-nav .active').removeClass('active');
-//             $(this).closest('a').addClass('active');
-//         }
-//     }
-// });
-
 
 // Typed Initiate
 if ($('.hero .hero-text h2').length == 1) {
@@ -69,130 +39,7 @@ if ($('.hero .hero-text h2').length == 1) {
     });
 }
 
-
-// Skills
-// $('.skills').waypoint(function () {
-//     $('.container1 .bar').each(function () {
-//         $(this).css("width", $(this).attr("aria-valuenow") + '%');
-//     });
-// }, {offset: '80%'});
-
-
-// Testimonials carousel
-// $(".testimonials-carousel").owlCarousel({
-//     center: true,
-//     autoplay: true,
-//     dots: true,
-//     loop: true,
-//     responsive: {
-//         0:{
-//             items:1
-//         }
-//     }
-// });
-
-
-
-// Portfolio filter
-// var portfolioIsotope = $('.portfolio-container').isotope({
-//     itemSelector: '.portfolio-item',
-//     layoutMode: 'fitRows'
-// });
-
-// $('#portfolio-filter li').on('click', function () {
-//     $("#portfolio-filter li").removeClass('filter-active');
-//     $(this).addClass('filter-active');
-//     portfolioIsotope.isotope({filter: $(this).data('filter')});
-// });
-
 (jQuery);
-
-
-
-
-// ============================ SCROLL ANIMATION ============================
-// ScrollReveal({
-//     //   reset: true,
-//     distance: "80px",
-//     duration: 2000,
-//     delay: 200,
-//   });
-  
-//   ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
-//   ScrollReveal().reveal(
-//     ".container-box, .services-container, .container-fluid, .contact form",
-//     { origin: "bottom" }
-//   );
-//   ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-//   ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const filterOptions = document.querySelectorAll("#portfolio-filter li"); // Get all filter options
-//     const portfolioItems = document.querySelectorAll(".portfolio-item"); // Get all portfolio items
-
-//     filterOptions.forEach(function(option) {
-//         option.addEventListener("click", function() {
-//             const filterValue = option.getAttribute("data-filter"); // Get the filter value
-
-//             // Remove 'filter-active' class from all options and add it to the clicked option
-//             filterOptions.forEach(function(item) {
-//                 item.classList.remove("filter-active");
-//             });
-//             option.classList.add("filter-active");
-
-//             portfolioItems.forEach(function(item) {
-//                 if (filterValue === "*" || item.classList.contains(filterValue)) {
-//                     item.style.display = "block"; // Show matching items
-//                 } else {
-//                     item.style.display = "none"; // Hide non-matching items
-//                 }
-//             });
-//         });
-//     });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const filterOptions = document.querySelectorAll("#portfolio-filter li");
-//     const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-//     filterOptions.forEach(function(option) {
-//         option.addEventListener("click", function() {
-//             const filterValue = option.getAttribute("data-filter");
-
-//             filterOptions.forEach(function(item) {
-//                 item.classList.remove("filter-active");
-//             });
-//             option.classList.add("filter-1");
-//             option.classList.add("filter-2");
-//             option.classList.add("filter-3");
-
-//             portfolioItems.forEach(function(item) {
-//                 if (filterValue === "*" || item.classList.contains(filterValue)) {
-//                     item.style.display = "block";
-//                 } else {
-//                     item.style.display = "none";
-//                 }
-//             });
-//         });
-//     });
-// });
-
 
 
 // ============== SETRVICES SECTION READMORE BUTTON ====================
