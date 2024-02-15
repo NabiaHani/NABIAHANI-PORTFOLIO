@@ -856,7 +856,7 @@ a:focus {
     background-color: #f5f5f5;
     position: relative;
     padding: 45px 0 15px 0;
-    height: 1600px;
+    height: 1085px;
 }
 
 @media (max-width: 767.98px){
@@ -873,7 +873,7 @@ a:focus {
 
 @media (max-width:900px){
     .portfolio{
-        height: 188rem;
+        height: 104rem;
     }
 }
 
