@@ -53,7 +53,7 @@ ScrollReveal().reveal('.home-contact p, .about-content, .title', { origin: 'righ
 
 // typed js
 const typed = new Typed('.multiple-text',{
-    strings: ['Frontend Developer', 'Web Designer', 'UI/UX Designer', 'Wordpress Developer', 'Freelancer'],
+    strings: ['Frontend Developer', 'Web Designer', 'UI/UX Designer'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
