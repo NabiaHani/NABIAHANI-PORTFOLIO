@@ -15,6 +15,11 @@
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet" />
 
+        <!-- toast -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
         <!-- FAVICON -->
         <link rel="shortcut icon" href="./images/favicon.png"
             type="image/x-icon">
@@ -241,50 +246,60 @@
 
             <div class="portfolio-container">
                 <div class="portfolio-box">
-                    <img src="./images/Quran.jpeg" alt>
+                    <img src="./images/Quran.jpeg"
+                        alt="Quran Player Screenshot">
                     <div class="portfolio-layer">
                         <h4>Quran Player</h4>
                         <p>Built Quran Player with Reactjs and API
                             Integration.</p>
-                        <a href="https://quranplayer-six.vercel.app/"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://quranplayer-six.vercel.app/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="portfolio-container">
-                    <div class="portfolio-box">
-                        <img src="./images/img 2.jpg" alt>
-                        <div class="portfolio-layer">
-                            <h4>Stylish AC Website</h4>
-                            <p>Stylish AC Responsive Website with HTML and
-                                CSS</p>
-                            <a href="https://almadinaac.netlify.app/"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
+                <div class="portfolio-box">
+                    <img src="./images/img 2.jpg"
+                        alt="Stylish AC Website Screenshot">
+                    <div class="portfolio-layer">
+                        <h4>Stylish AC Website</h4>
+                        <p>Stylish AC Responsive Website with HTML and CSS</p>
+                        <a href="https://almadinaac.netlify.app/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="portfolio-box">
-                        <img src="./images/img 5.jpeg" alt>
-                        <div class="portfolio-layer">
-                            <h4>Login Authentication</h4>
-                            <p>Made Login Authentication with HTML, CSS and
-                                JS</p>
-                            <a href="https://authentication-id.netlify.app/"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
+                <div class="portfolio-box">
+                    <img src="./images/img 5.jpeg"
+                        alt="Login Authentication Screenshot">
+                    <div class="portfolio-layer">
+                        <h4>Login Authentication</h4>
+                        <p>Made Login Authentication with HTML, CSS, and JS</p>
+                        <a href="https://authentication-id.netlify.app/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="portfolio-box">
-                        <img src="./images/Mobile voting.jpg" alt>
-                        <div class="portfolio-layer">
-                            <h4>Voting App</h4>
-                            <p>Made voting app with HTML, CSS and JS</p>
-                            <a href="https://votingg-app.netlify.app/"><i
-                                    class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
+                <div class="portfolio-box">
+                    <img src="./images/Mobile voting.jpg"
+                        alt="Voting App Screenshot">
+                    <div class="portfolio-layer">
+                        <h4>Voting App</h4>
+                        <p>Made voting app with HTML, CSS, and JS</p>
+                        <a href="https://votingg-app.netlify.app/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
                     </div>
+                </div>
+            </div>
 
-                    <!-- <div class="portfolio-box">
+            <!-- <div class="portfolio-box">
                 <img src="./images/countdown.webp" alt="">
                 <div class="portfolio-layer">
                     <h4>Countdown Timer</h4>
@@ -293,7 +308,7 @@
                 </div>
             </div> -->
 
-                    <!-- <div class="portfolio-box">
+            <!-- <div class="portfolio-box">
                 <img src="./images/temperature.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Temperature Converter</h4>
@@ -303,7 +318,7 @@
                 </div>
             </div> -->
 
-                    <!-- <div class="portfolio-box">
+            <!-- <div class="portfolio-box">
                 <img src="./images/todo list.jpeg" alt="">
                 <div class="portfolio-layer">
                     <h4>To-Do List</h4>
@@ -312,69 +327,69 @@
                             class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div> -->
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form id="contactForm">
+                <div class="input-box">
+                    <input id="name" type="text" placeholder="Full Name">
+                    <input id="email" type="email" placeholder="Email Address">
                 </div>
-            </section>
 
-            <!-- CONTACT SECTION -->
-            <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me</span></h2>
+                <div class="input-box">
+                    <input id="mobileNumber" type="number"
+                        placeholder="Mobile Number">
+                    <input id="subject" type="text" placeholder="Subject">
+                </div>
 
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email Address">
+                <textarea name id="message" cols="30" rows="10"
+                    placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Nabia Hani!!</h3>
+                    <p>Thank you for visiting my personal portfolio website.
+                        Connect with me over socials.
                     </div>
 
-                    <div class="input-box">
-                        <input type="number" placeholder="Mobile Number">
-                        <input type="text" placeholder="Subject">
-                    </div>
-
-                    <textarea name id cols="30" rows="10"
-                        placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="btn">
-                </form>
-            </section>
-
-            <!-- FOOTER -->
-            <footer class="footer">
-                <div class="box-container">
                     <div class="box">
-                        <h3>Nabia Hani!!</h3>
-                        <p>Thank you for visiting my personal portfolio website.
-                            Connect with me over socials.
-                        </div>
+                        <h3 class="h3">Links</h3>
+                        <a href="#home"><i
+                                class='bx bx-right-arrow-circle'></i>Home</a>
+                        <a href="#about"><i
+                                class='bx bx-right-arrow-circle'></i>About</a>
+                        <a href="#skills"><i
+                                class='bx bx-right-arrow-circle'></i>Skills</a>
+                        <a href="#services"><i
+                                class='bx bx-right-arrow-circle'></i>Services</a>
+                        <!-- <a href="#experience"><i class='bx bx-right-arrow-circle'></i>Experience</a> -->
+                        <a href="#portfolio"><i
+                                class='bx bx-right-arrow-circle'></i>Portfolio</a>
+                        <a href="#contact"><i
+                                class='bx bx-right-arrow-circle'></i>Contact</a>
+                    </div>
 
-                        <div class="box">
-                            <h3 class="h3">Links</h3>
-                            <a href="#home"><i
-                                    class='bx bx-right-arrow-circle'></i>Home</a>
-                            <a href="#about"><i
-                                    class='bx bx-right-arrow-circle'></i>About</a>
-                            <a href="#skills"><i
-                                    class='bx bx-right-arrow-circle'></i>Skills</a>
-                            <a href="#services"><i
-                                    class='bx bx-right-arrow-circle'></i>Services</a>
-                            <!-- <a href="#experience"><i class='bx bx-right-arrow-circle'></i>Experience</a> -->
-                            <a href="#portfolio"><i
-                                    class='bx bx-right-arrow-circle'></i>Portfolio</a>
-                            <a href="#contact"><i
-                                    class='bx bx-right-arrow-circle'></i>Contact</a>
-                        </div>
+                    <div class="box">
+                        <h3>Contact Me</h3>
+                        <a href="mailto:nabiahani02@gmail.com"> <i
+                                class='bx bxs-envelope'
+                                style="color:  #00abf0;">
+                                &nbsp;
+                            </i>nabiahani02@gmail.com</a>
 
-                        <div class="box">
-                            <h3>Contact Me</h3>
-                            <a href="mailto:nabiahani02@gmail.com"> <i
-                                    class='bx bxs-envelope'
-                                    style="color:  #00abf0;">
-                                    &nbsp;
-                                </i>nabiahani02@gmail.com</a>
+                        <a> <i class='bx bxs-edit-location'
+                                style="color:  #00abf0;"> &nbsp;
+                            </i>Karachi, Pakistan</a>
 
-                            <a> <i class='bx bxs-edit-location'
-                                    style="color:  #00abf0;"> &nbsp;
-                                </i>Karachi, Pakistan</a>
-
-                            <!-- <div class="share">
+                        <!-- <div class="share">
                     <a href="https://www.linkedin.com/in/nabiahani/" target="_blank" class="social-links links"><i
                             class='bx bxl-linkedin-square'></i></a>
                     <a href="mailto:nabiahani02@gmail.com" target="_blank" class="social-links links"><i
@@ -384,31 +399,42 @@
                     <a href="https://github.com/NabiaHani" class="social-links links"><i class='bx bxl-github'></i></a>
                 </div>  -->
 
-                        </div>
                     </div>
+                </div>
 
-                    <div class="footer-text">
-                        <p>Copyright &copy; 2023-2024, Made with <i
-                                class="fa-solid fa-heart"></i> by <a
-                                href="https://www.linkedin.com/in/nabiahani/">Nabia
-                                Hani</a> | All
-                            Rights Reserved</p>
-                    </div>
+                <div class="footer-text">
+                    <p>Copyright &copy; 2023-2024, Made with <i
+                            class="fa-solid fa-heart"></i> by <a
+                            href="https://www.linkedin.com/in/nabiahani/">Nabia
+                            Hani</a> | All
+                        Rights Reserved</p>
+                </div>
 
-                    <div class="footer-iconTop">
-                        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
-                    </div>
-                </footer>
+                <div class="footer-iconTop">
+                    <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+                </div>
+            </footer>
 
-                <!-- SCROLL REVEAL -->
-                <script src="https://unpkg.com/scrollreveal"></script>
+            <!-- SCROLL REVEAL -->
+            <script src="https://unpkg.com/scrollreveal"></script>
 
-                <!-- TYPED JS LINK -->
-                <script
-                    src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <!-- TYPED JS LINK -->
+            <script
+                src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-                <!-- JS -->
-                <script src="./js/main.js"></script>
-            </body>
+            <!-- EMAILJS LINK -->
+            <!-- EmailJS SDK -->
 
-        </html>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+            <!-- EmailJS SDK -->
+            <script type="text/javascript"
+                src="https://cdn.emailjs.com/dist/email.min.latest.js"></script>
+
+            <!-- Your custom script with defer to ensure correct loading order -->
+            <script src="./js/main.js" defer></script>
+
+        </body>
+
+    </html>

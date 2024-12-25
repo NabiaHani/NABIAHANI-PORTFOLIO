@@ -59,3 +59,52 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop: true,
 });
+
+(function () {
+    emailjs.init("qhRdSopQ7zBAf6afCys08"); // Replace with your EmailJS user ID
+})();
+
+// Function to handle form submission
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    const fullName = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mobileNumber = document.getElementById("mobileNumber").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Validate form inputs
+    if (!fullName || !email || !mobileNumber || !subject || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    // Log form data for debugging
+    console.log("Form Data:", {
+        fullName,
+        email,
+        mobileNumber,
+        subject,
+        message
+    });
+
+    // Send email with EmailJS
+    email.send("service_qeeevo8", "template_hucqgee", {
+        name: fullName,
+        email: email,
+        mobileNumber: mobileNumber,
+        subject: subject,
+        message: message,
+    })
+    .then(function (response) {
+        // Success
+        console.log("Email sent successfully:", response);
+        alert("Your message has been sent successfully!");
+    }, function (error) {
+        // Error
+        console.error("Error sending email:", error);
+        alert("Oops, something went wrong. Please try again later.");
+    });
+});
